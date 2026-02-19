@@ -270,3 +270,169 @@ footer a:hover {
 footer {
   background-color: #09090b;
 }
+
+/* Client Dashboard Preview - Donut Chart (75% complete, 19% in progress, 6% upcoming) */
+.dashboard-donut {
+  position: relative;
+  border-radius: 50%;
+  background: conic-gradient(
+    var(--brand-cream) 0deg 270deg,
+    var(--brand-brown) 270deg 338deg,
+    #52525b 338deg 360deg
+  );
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.dashboard-donut-inner {
+  width: 70%;
+  height: 70%;
+  background: #18181b;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Client Dashboard Preview - make it feel like a snapshot/mock */
+.snapshot-frame {
+  position: relative;
+  box-shadow:
+    0 0 0 1px rgba(255, 255, 255, 0.12),
+    0 25px 50px -12px rgba(0, 0, 0, 0.7),
+    0 50px 100px -20px rgba(0, 0, 0, 0.6),
+    0 80px 160px -30px rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  transform: translateY(60px) scale(0.96);
+  transition: opacity 0.8s cubic-bezier(0.22, 1, 0.36, 1),
+              transform 0.8s cubic-bezier(0.22, 1, 0.36, 1);
+}
+.snapshot-frame.snapshot-visible {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+}
+.snapshot-frame::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  pointer-events: none;
+  border: 1px solid rgba(255, 255, 255, 0.22);
+}
+.snapshot-frame::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background:
+    radial-gradient(1200px 500px at 70% 0%, rgba(151, 117, 85, 0.10), transparent 55%),
+    radial-gradient(900px 480px at 10% 100%, rgba(222, 221, 203, 0.06), transparent 55%),
+    linear-gradient(to bottom, rgba(0, 0, 0, 0.15), transparent 30%, rgba(0, 0, 0, 0.25));
+  mix-blend-mode: screen;
+  opacity: 0.55;
+}
+.snapshot-badge {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  z-index: 5;
+  padding: 8px 10px;
+  border-radius: 999px;
+  border: 1px solid rgba(151, 117, 85, 0.35);
+  background: rgba(0, 0, 0, 0.45);
+  color: var(--brand-cream);
+}
+
+/* Dashboard card animations */
+#client-portal .rounded-2xl {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s cubic-bezier(0.22, 1, 0.36, 1),
+              transform 0.6s cubic-bezier(0.22, 1, 0.36, 1);
+}
+#client-portal .rounded-2xl.card-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Progress Trend cycling panels */
+.trend-card-wrapper {
+  position: relative;
+  min-height: 200px;
+}
+.trend-card-wrapper .relative.min-h-\[180px\] {
+  position: relative;
+}
+.trend-panel {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateX(16px);
+  transition: opacity 0.45s cubic-bezier(0.22, 1, 0.36, 1),
+              transform 0.45s cubic-bezier(0.22, 1, 0.36, 1),
+              visibility 0.45s;
+}
+.trend-panel.active {
+  position: relative;
+  opacity: 1;
+  visibility: visible;
+  transform: translateX(0);
+}
+.trend-panel.leaving {
+  opacity: 0;
+  transform: translateX(-16px);
+  pointer-events: none;
+}
+.trend-dot {
+  transition: background-color 0.35s ease, transform 0.35s ease;
+}
+.trend-dot.bg-\[\var\(--brand-cream\)\] {
+  transform: scale(1.2);
+}
+.budget-pie {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  background: conic-gradient(
+    var(--brand-cream) 0deg 144deg,
+    var(--brand-brown) 144deg 252deg,
+    #52525b 252deg 324deg,
+    #71717a 324deg 360deg
+  );
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.budget-pie-inner {
+  width: 70%;
+  height: 70%;
+  background: #18181b;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.75rem;
+  color: var(--brand-cream);
+}
+.alert-item {
+  opacity: 0;
+  transform: translateY(8px);
+  transition: opacity 0.35s ease, transform 0.35s ease;
+}
+.alert-item.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Calendar fade transition */
+.calendar-day,
+.calendar-date {
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+.calendar-tasks {
+  transition: opacity 0.3s ease;
+}
+.calendar-task-item {
+  transition: opacity 0.4s ease, transform 0.4s ease;
+}

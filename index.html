@@ -513,131 +513,288 @@
       </div>
     </section>
 
-    <!-- Specs / Technical Section -->
-    <section class="py-24 bg-zinc-950">
+    <!-- Client Dashboard / Project Tracking Section -->
+    <section class="py-24 bg-zinc-950 border-t border-zinc-900/50" id="client-portal">
       <div class="max-w-7xl mx-auto px-6">
-        <div
-          class="bg-zinc-900 border border-zinc-800 rounded-3xl overflow-hidden grid grid-cols-1 lg:grid-cols-2"
-        >
-          <!-- Data Table -->
-          <div class="p-10 md:p-16 flex flex-col justify-center">
+        <!-- Section Header -->
+        <div class="flex flex-col md:flex-row justify-between items-end mb-16 gap-6">
+          <div>
             <h2
-              class="font-heading text-3xl md:text-4xl font-normal text-white mb-2"
+              class="font-heading text-4xl md:text-5xl font-normal text-white mb-4"
               style="letter-spacing: 0.06em;"
             >
-              OPERATIONAL STANDARDS
+              YOUR PROJECT, YOUR DASHBOARD
             </h2>
-            <p class="text-zinc-400 text-lg mb-10">
-              We operate with a metrics-driven approach to general contracting.
+            <p class="text-zinc-400 text-lg max-w-xl" style="letter-spacing: 0.04em;">
+              Every client receives a dedicated portal to track progress in real time—transparency, honesty, and direct involvement built into how we work.
             </p>
+            <p class="text-zinc-400 text-sm max-w-xl mt-5 leading-relaxed" style="letter-spacing: 0.06em;">
+              This is our pushback against the “typical GC” relationship where you chase updates, information lives in text threads, and visibility depends on who you know.
+              We’re building a client experience that treats you like a partner—clear timelines, documented decisions, and proactive communication from day one.
+            </p>
+            <ul class="mt-6 space-y-3 text-sm text-zinc-400 max-w-xl">
+              <li class="flex gap-3">
+                <span class="mt-2 w-2 h-2 rounded-full bg-[var(--brand-brown)]/80 flex-shrink-0"></span>
+                <span><span class="text-[var(--brand-cream)]">Single source of truth</span> for milestones, daily logs, approvals, and project files.</span>
+              </li>
+              <li class="flex gap-3">
+                <span class="mt-2 w-2 h-2 rounded-full bg-[var(--brand-brown)]/80 flex-shrink-0"></span>
+                <span><span class="text-[var(--brand-cream)]">Proactive updates</span> you can scan in seconds—no chasing, no guesswork.</span>
+              </li>
+              <li class="flex gap-3">
+                <span class="mt-2 w-2 h-2 rounded-full bg-[var(--brand-brown)]/80 flex-shrink-0"></span>
+                <span><span class="text-[var(--brand-cream)]">Accountability by design</span> with documented progress, decisions, and next steps.</span>
+              </li>
+            </ul>
+          </div>
+          <div class="flex flex-col items-start md:items-end gap-2">
+            <span class="font-mono-rustic text-xs uppercase px-4 py-1.5 rounded-full border border-[var(--brand-brown)]/50 text-[var(--brand-cream)] bg-black/30" style="letter-spacing: 0.2em;">
+              CONCEPT SNAPSHOT
+            </span>
+            <span class="font-mono-rustic text-xs text-zinc-500 uppercase" style="letter-spacing: 0.2em;">
+              Launching Summer 2026
+            </span>
+          </div>
+        </div>
 
-            <div class="flex flex-col gap-0 w-full">
-              <!-- Row -->
-              <div
-                class="flex items-center justify-between py-5 border-b border-zinc-800"
-              >
-                <span class="font-mono-rustic text-sm text-zinc-300 uppercase" style="letter-spacing: 0.08em;">
-                  Safety Compliance Rate
-                </span>
-                <span class="font-heading text-xl text-white">99.8%</span>
+        <!-- Dashboard Preview Mockup -->
+        <div class="snapshot-frame rounded-3xl overflow-hidden border border-zinc-800 bg-zinc-900/80 backdrop-blur-sm">
+          <div class="snapshot-badge font-mono-rustic text-[10px] uppercase" style="letter-spacing: 0.18em;">
+            Portal UI preview (concept)
+          </div>
+          <!-- Mock Header Bar -->
+          <div class="flex items-center justify-between px-6 py-4 border-b border-zinc-800 bg-zinc-900/90">
+            <div class="flex items-center gap-4">
+              <div class="hidden sm:flex items-center gap-2">
+                <span class="w-2.5 h-2.5 rounded-full bg-zinc-700"></span>
+                <span class="w-2.5 h-2.5 rounded-full bg-zinc-700"></span>
+                <span class="w-2.5 h-2.5 rounded-full bg-zinc-700"></span>
               </div>
-              <!-- Row -->
-              <div
-                class="flex items-center justify-between py-5 border-b border-zinc-800"
-              >
-                <span class="font-mono-rustic text-sm text-zinc-300 uppercase" style="letter-spacing: 0.08em;">
-                  Permit Acquisition Time
-                </span>
-                <span class="font-heading text-xl text-white">-30% Avg</span>
+              <div class="w-8 h-8 rounded-lg bg-[var(--brand-brown)]/80 flex items-center justify-center">
+                <i data-lucide="layout-dashboard" class="w-4 h-4 text-[var(--brand-cream)]" style="stroke-width:1.5"></i>
               </div>
-              <!-- Row -->
-              <div
-                class="flex items-center justify-between py-5 border-b border-zinc-800"
-              >
-                <span class="font-mono-rustic text-sm text-zinc-300 uppercase" style="letter-spacing: 0.08em;">
-                  Budget Adherence
-                </span>
-                <span class="font-heading text-xl text-white">Strict Fixed</span>
-              </div>
-              <!-- Row -->
-              <div
-                class="flex items-center justify-between py-5 border-b border-zinc-800"
-              >
-                <span class="font-mono-rustic text-sm text-zinc-300 uppercase" style="letter-spacing: 0.08em;">
-                  Subcontractor Network
-                </span>
-                <span class="font-heading text-xl text-white">Tier 1 Only</span>
-              </div>
-              <!-- Row -->
-              <div
-                class="flex items-center justify-between py-5 border-b border-zinc-800"
-              >
-                <span class="font-mono-rustic text-sm text-zinc-300 uppercase" style="letter-spacing: 0.08em;">
-                  Reporting Frequency
-                </span>
-                <span class="font-heading text-xl text-white">Daily Logs</span>
-              </div>
-              <!-- Row -->
-              <div
-                class="flex items-center justify-between py-5 border-b border-zinc-800"
-              >
-                <span class="font-mono-rustic text-sm text-zinc-300 uppercase" style="letter-spacing: 0.08em;">
-                  Site Inspections
-                </span>
-                <span class="font-heading text-xl text-white">Weekly</span>
-              </div>
+              <span class="font-mono-rustic text-sm text-white uppercase" style="letter-spacing: 0.12em;">Project Dashboard</span>
             </div>
-
-            <div class="mt-10">
-              <a
-                href="#"
-                class="font-mono-rustic inline-flex items-center gap-2 text-white border-b border-white pb-1 hover:text-zinc-300 hover:border-zinc-300 transition-colors text-sm uppercase"
-                style="letter-spacing: 0.12em;"
-              >
-                Download Capabilities Deck
-                <i data-lucide="arrow-up-right" class="w-4 h-4" style="stroke-width:1.5"></i>
-              </a>
+            <div class="hidden md:flex items-center gap-3">
+              <div class="flex items-center gap-2 px-4 py-2 rounded-lg border border-zinc-700 bg-zinc-800/50">
+                <i data-lucide="search" class="w-4 h-4 text-zinc-500" style="stroke-width:1.5"></i>
+                <span class="text-zinc-500 text-sm" style="letter-spacing: 0.06em;">Search tasks, phases, updates...</span>
+              </div>
+              <span class="px-3 py-1 rounded-full border border-[var(--brand-brown)]/40 text-[var(--brand-cream)] text-xs uppercase bg-black/30" style="letter-spacing: 0.14em;">
+                Summer 2026
+              </span>
             </div>
           </div>
 
-          <!-- Visual -->
-          <div class="relative min-h-[500px] lg:h-full bg-zinc-800">
-            <img
-              src="https://images.unsplash.com/photo-1613490493576-7fde63acd811?q=80&w=2671&auto=format&fit=crop"
-              class="absolute inset-0 w-full h-full object-cover opacity-90 mix-blend-overlay"
-              alt="Technical Drawing"
-            />
-            <div
-              class="absolute inset-0 bg-gradient-to-t from-zinc-900 to-transparent opacity-80"
-            ></div>
+          <!-- Dashboard Grid -->
+          <div class="p-6 md:p-8 grid grid-cols-1 lg:grid-cols-3 gap-6">
+            <!-- Card 1: Project Overview -->
+            <div class="lg:col-span-2 rounded-2xl border border-zinc-800 bg-zinc-900/60 p-6 md:p-8">
+              <div class="flex items-center justify-between mb-6">
+                <h3 class="font-mono-rustic text-sm text-white uppercase" style="letter-spacing: 0.15em;">Project Overview</h3>
+                <span class="text-xs text-zinc-500" style="letter-spacing: 0.08em;">Live</span>
+              </div>
+              <div class="mb-8">
+                <p class="text-2xl md:text-3xl font-normal text-[var(--brand-cream)] mb-1" style="letter-spacing: 0.03em;">The Glasshaven Residence</p>
+                <p class="text-zinc-500 text-sm" style="letter-spacing: 0.08em;">Phase 3: Interiors</p>
+              </div>
+              <div class="space-y-4">
+                <div>
+                  <div class="flex justify-between text-xs text-zinc-400 mb-2" style="letter-spacing: 0.08em;">
+                    <span>Overall Progress</span>
+                    <span>75%</span>
+                  </div>
+                  <div class="h-2 rounded-full bg-zinc-800 overflow-hidden">
+                    <div class="h-full rounded-full bg-gradient-to-r from-[var(--brand-brown)] to-[var(--brand-cream)] transition-all duration-500" style="width: 75%;"></div>
+                  </div>
+                </div>
+                <div class="flex gap-4 pt-2">
+                  <div class="flex-1 rounded-xl border border-zinc-800 p-4">
+                    <p class="text-zinc-500 text-xs mb-1" style="letter-spacing: 0.1em;">Milestones</p>
+                    <p class="text-xl text-white">12 / 16</p>
+                  </div>
+                  <div class="flex-1 rounded-xl border border-zinc-800 p-4">
+                    <p class="text-zinc-500 text-xs mb-1" style="letter-spacing: 0.1em;">Days Remaining</p>
+                    <p class="text-xl text-white">42</p>
+                  </div>
+                </div>
+              </div>
+            </div>
 
-            <div class="absolute bottom-10 left-10 md:left-16 right-10">
-              <div class="glass-panel p-6 rounded-2xl max-w-sm">
-                <div class="flex items-center gap-4 mb-3">
-                  <div class="p-2 bg-white/10 rounded-lg">
-                    <i data-lucide="ruler" class="w-6 h-6 text-white" style="stroke-width:1.5"></i>
+            <!-- Card 2: Progress Trend (cycles: graph → budget pie → alerts) -->
+            <div class="rounded-2xl border border-zinc-800 bg-zinc-900/60 p-6 md:p-8 trend-card-wrapper">
+              <div class="flex items-center justify-between mb-6">
+                <h3 class="font-mono-rustic text-sm text-white uppercase" style="letter-spacing: 0.15em;">Progress & Insights</h3>
+                <div class="flex items-center gap-2">
+                  <span class="trend-dot w-2 h-2 rounded-full bg-[var(--brand-cream)]" data-panel="0" title="Progress"></span>
+                  <span class="trend-dot w-2 h-2 rounded-full bg-zinc-600" data-panel="1" title="Budget"></span>
+                  <span class="trend-dot w-2 h-2 rounded-full bg-zinc-600" data-panel="2" title="Alerts"></span>
+                </div>
+              </div>
+              <div class="relative min-h-[180px]">
+                <!-- Panel 1: Line graph -->
+                <div class="trend-panel active" data-trend-panel="0">
+                  <div id="progress-graph" class="relative">
+                    <canvas width="280" height="140" class="w-full h-auto"></canvas>
+                    <div class="absolute bottom-0 left-0 right-0 flex justify-between text-[10px] text-zinc-600 px-2 pb-1">
+                      <span>Mon</span>
+                      <span>Wed</span>
+                      <span>Fri</span>
+                      <span>Sun</span>
+                    </div>
+                  </div>
+                  <div class="mt-4 flex items-center justify-between text-xs">
+                    <div class="flex items-center gap-2">
+                      <span class="w-2 h-2 rounded-full bg-[var(--brand-cream)]"></span>
+                      <span class="text-zinc-400">Completion %</span>
+                    </div>
+                    <span class="text-[var(--brand-cream)] font-normal">+30% this week</span>
+                  </div>
+                </div>
+                <!-- Panel 2: Budget pie -->
+                <div class="trend-panel p-1" data-trend-panel="1">
+                  <div class="flex flex-col md:flex-row items-center gap-6">
+                    <div class="budget-pie flex-shrink-0">
+                      <div class="budget-pie-inner">40%</div>
+                    </div>
+                    <div class="flex-1 space-y-3 w-full">
+                      <div class="flex items-center justify-between text-xs">
+                        <span class="flex items-center gap-2"><span class="w-2.5 h-2.5 rounded-full bg-[var(--brand-cream)]"></span> Labor</span>
+                        <span class="text-zinc-400">40%</span>
+                      </div>
+                      <div class="flex items-center justify-between text-xs">
+                        <span class="flex items-center gap-2"><span class="w-2.5 h-2.5 rounded-full bg-[var(--brand-brown)]"></span> Materials</span>
+                        <span class="text-zinc-400">30%</span>
+                      </div>
+                      <div class="flex items-center justify-between text-xs">
+                        <span class="flex items-center gap-2"><span class="w-2.5 h-2.5 rounded-full bg-zinc-500"></span> Subs</span>
+                        <span class="text-zinc-400">20%</span>
+                      </div>
+                      <div class="flex items-center justify-between text-xs">
+                        <span class="flex items-center gap-2"><span class="w-2.5 h-2.5 rounded-full bg-zinc-600"></span> Other</span>
+                        <span class="text-zinc-400">10%</span>
+                      </div>
+                    </div>
+                  </div>
+                  <p class="mt-4 text-[10px] text-zinc-500 uppercase" style="letter-spacing: 0.12em;">Budget expenses · On track</p>
+                </div>
+                <!-- Panel 3: Alerts / updates -->
+                <div class="trend-panel p-1" data-trend-panel="2">
+                  <div class="space-y-3" id="alerts-list">
+                    <div class="alert-item flex items-start gap-3 p-3 rounded-xl border border-zinc-800 bg-black/20">
+                      <span class="w-2 h-2 rounded-full bg-[var(--brand-cream)] mt-1.5 flex-shrink-0"></span>
+                      <div>
+                        <p class="text-white text-xs font-normal">Inspection passed — framing</p>
+                        <p class="text-zinc-500 text-[10px]" style="letter-spacing: 0.06em;">New update · 2h ago</p>
+                      </div>
+                    </div>
+                    <div class="alert-item flex items-start gap-3 p-3 rounded-xl border border-zinc-800 bg-black/20">
+                      <span class="w-2 h-2 rounded-full bg-[var(--brand-brown)] mt-1.5 flex-shrink-0"></span>
+                      <div>
+                        <p class="text-white text-xs font-normal">Daily log uploaded</p>
+                        <p class="text-zinc-500 text-[10px]" style="letter-spacing: 0.06em;">New update · 6h ago</p>
+                      </div>
+                    </div>
+                    <div class="alert-item flex items-start gap-3 p-3 rounded-xl border border-zinc-800 bg-black/20">
+                      <span class="w-2 h-2 rounded-full bg-zinc-500 mt-1.5 flex-shrink-0"></span>
+                      <div>
+                        <p class="text-white text-xs font-normal">Electrical rough-in scheduled</p>
+                        <p class="text-zinc-500 text-[10px]" style="letter-spacing: 0.06em;">Reminder · Tomorrow 9AM</p>
+                      </div>
+                    </div>
+                  </div>
+                  <p class="mt-3 text-[10px] text-zinc-500 uppercase" style="letter-spacing: 0.12em;">Alerts & notifications</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 3: Recent Activity / Tasks -->
+            <div class="lg:col-span-2 rounded-2xl border border-zinc-800 bg-zinc-900/60 p-6 md:p-8">
+              <div class="flex items-center justify-between mb-6">
+                <h3 class="font-mono-rustic text-sm text-white uppercase" style="letter-spacing: 0.15em;">Recent Activity</h3>
+                <button class="text-xs text-[var(--brand-cream)] hover:underline" style="letter-spacing: 0.08em;">View All</button>
+              </div>
+              <div class="space-y-4">
+                <div class="flex items-start gap-4 p-4 rounded-xl border border-zinc-800 hover:border-[var(--brand-brown)]/30 transition-colors">
+                  <div class="w-8 h-8 rounded-lg bg-[var(--brand-brown)]/20 flex items-center justify-center flex-shrink-0">
+                    <i data-lucide="check-circle" class="w-4 h-4 text-[var(--brand-cream)]" style="stroke-width:1.5"></i>
                   </div>
                   <div>
-                    <p class="font-mono-rustic text-xs text-zinc-400 uppercase" style="letter-spacing: 0.2em;">
-                      Current Project
-                    </p>
-                    <p class="font-heading text-white text-lg" style="letter-spacing: 0.03em;">
-                      The Glasshaven Residence
-                    </p>
+                    <p class="text-white text-sm mb-1">Interior framing inspection passed</p>
+                    <p class="text-zinc-500 text-xs" style="letter-spacing: 0.06em;">Today, 2:34 PM</p>
                   </div>
                 </div>
-                <div
-                  class="w-full bg-zinc-700 h-1 rounded-full overflow-hidden"
-                >
-                  <div class="bg-white w-[75%] h-full rounded-full"></div>
+                <div class="flex items-start gap-4 p-4 rounded-xl border border-zinc-800 hover:border-[var(--brand-brown)]/30 transition-colors">
+                  <div class="w-8 h-8 rounded-lg bg-[var(--brand-brown)]/20 flex items-center justify-center flex-shrink-0">
+                    <i data-lucide="file-text" class="w-4 h-4 text-[var(--brand-cream)]" style="stroke-width:1.5"></i>
+                  </div>
+                  <div>
+                    <p class="text-white text-sm mb-1">Daily log uploaded — 12/16 tasks completed</p>
+                    <p class="text-zinc-500 text-xs" style="letter-spacing: 0.06em;">Today, 8:00 AM</p>
+                  </div>
                 </div>
-                <div class="flex justify-between mt-2 text-xs text-zinc-400 font-mono-rustic" style="letter-spacing: 0.08em;">
-                  <span>Phase 3: Interiors</span>
-                  <span>75% Complete</span>
+                <div class="flex items-start gap-4 p-4 rounded-xl border border-zinc-800 hover:border-[var(--brand-brown)]/30 transition-colors">
+                  <div class="w-8 h-8 rounded-lg bg-zinc-700/50 flex items-center justify-center flex-shrink-0">
+                    <i data-lucide="clipboard-list" class="w-4 h-4 text-zinc-400" style="stroke-width:1.5"></i>
+                  </div>
+                  <div>
+                    <p class="text-white text-sm mb-1">Electrical rough-in scheduled — Wed 9:00 AM</p>
+                    <p class="text-zinc-500 text-xs" style="letter-spacing: 0.06em;">Yesterday</p>
+                  </div>
                 </div>
               </div>
             </div>
+
+            <!-- Card 4: Calendar Widget -->
+            <div class="rounded-2xl border border-zinc-800 bg-zinc-900/60 p-6 md:p-8 flex flex-col justify-between" id="calendar-widget">
+              <div>
+                <h3 class="font-mono-rustic text-sm text-white uppercase mb-4" style="letter-spacing: 0.15em;">Upcoming Tasks</h3>
+                <div class="mb-6 p-4 rounded-xl border border-[var(--brand-brown)]/30 bg-black/20">
+                  <div class="flex items-center justify-between mb-3">
+                    <span class="calendar-day text-2xl font-normal text-[var(--brand-cream)]" style="letter-spacing: 0.03em;">Mon</span>
+                    <span class="calendar-date text-lg text-zinc-500">12</span>
+                  </div>
+                  <ul class="calendar-tasks space-y-2">
+                    <li class="text-xs text-zinc-400 flex items-center gap-2">
+                      <span class="w-1.5 h-1.5 rounded-full bg-[var(--brand-brown)]"></span>
+                      Framing inspection
+                    </li>
+                    <li class="text-xs text-zinc-400 flex items-center gap-2">
+                      <span class="w-1.5 h-1.5 rounded-full bg-[var(--brand-brown)]"></span>
+                      Material delivery
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="space-y-3">
+                <div class="flex items-center gap-3 text-sm">
+                  <i data-lucide="calendar" class="w-4 h-4 text-[var(--brand-brown)]" style="stroke-width:1.5"></i>
+                  <span class="text-zinc-300">Auto-updating schedule</span>
+                </div>
+                <div class="flex items-center gap-3 text-sm">
+                  <i data-lucide="file-check" class="w-4 h-4 text-[var(--brand-brown)]" style="stroke-width:1.5"></i>
+                  <span class="text-zinc-300">Daily site logs</span>
+                </div>
+                <div class="flex items-center gap-3 text-sm">
+                  <i data-lucide="users" class="w-4 h-4 text-[var(--brand-brown)]" style="stroke-width:1.5"></i>
+                  <span class="text-zinc-300">Direct team access</span>
+                </div>
+              </div>
+              <button class="mt-6 w-full py-3 rounded-xl border border-[var(--brand-brown)]/60 text-[var(--brand-cream)] text-xs uppercase hover:bg-[var(--brand-brown)]/20 transition-colors" style="letter-spacing: 0.12em;">
+                Client Portal (Coming Soon)
+              </button>
+            </div>
           </div>
+        </div>
+        <p class="mt-4 text-xs text-zinc-500 max-w-3xl leading-relaxed" style="letter-spacing: 0.08em;">
+          Concept snapshot for illustration only. The client portal launches in <span class="text-[var(--brand-cream)]">Summer 2026</span>; final UI and features may evolve as we refine the experience.
+        </p>
+
+        <!-- Value Props -->
+        <div class="mt-12 flex flex-wrap gap-4 justify-center">
+          <span class="font-mono-rustic px-4 py-2 rounded-full border border-zinc-800 text-zinc-400 text-xs uppercase" style="letter-spacing: 0.1em;">Real-time updates</span>
+          <span class="font-mono-rustic px-4 py-2 rounded-full border border-zinc-800 text-zinc-400 text-xs uppercase" style="letter-spacing: 0.1em;">Secure login</span>
+          <span class="font-mono-rustic px-4 py-2 rounded-full border border-zinc-800 text-zinc-400 text-xs uppercase" style="letter-spacing: 0.1em;">Client-first design</span>
         </div>
       </div>
     </section>
@@ -758,6 +915,7 @@
 
     <script src="assets/js/ticker.js"></script>
     <script src="assets/js/services.js"></script>
+    <script src="assets/js/dashboard.js"></script>
     <script>
       lucide.createIcons();
     </script>
