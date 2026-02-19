@@ -5,31 +5,48 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Slender &amp; Company | General Contractor</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ['Courier Prime', 'Cutive Mono', 'monospace'],
+              heading: ['Courier Prime', 'Cutive Mono', 'monospace'],
+            }
+          }
+        }
+      }
+    </script>
     <script src="https://unpkg.com/lucide@latest"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="" />
     <link
-      href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Courier+Prime:wght@400;700&family=Inter:wght@300;400;500;600&family=Cutive+Mono&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Courier+Prime:wght@400;700&family=Cutive+Mono&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="assets/css/styles.css" />
+    <link rel="icon" type="image/png" href="assets/images/logo-compact.png" />
   </head>
   <body
     class="bg-zinc-950 text-zinc-200 antialiased selection:bg-zinc-700 selection:text-white"
   >
     <!-- Navigation -->
     <nav
-      class="fixed top-0 left-0 w-full z-50 border-b border-white/5 bg-zinc-950/80 backdrop-blur-md"
+      class="fixed top-0 left-0 w-full z-50 border-b border-[rgba(151,117,85,0.2)] bg-[#09090b]/95 backdrop-blur-md"
     >
       <div
         class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between"
       >
         <a
           href="#"
-          class="font-heading text-2xl tracking-wide text-white flex items-center gap-3"
+          class="flex items-center transition-opacity hover:opacity-90"
+          aria-label="Slender & Company - Home"
         >
-          <i data-lucide="layers" class="w-6 h-6 text-zinc-400" style="stroke-width:1.5"></i>
-          <span class="tracking-widest" style="letter-spacing: 0.15em;">SLENDER <span class="text-zinc-500">&amp;</span> CO.</span>
+          <img
+            src="assets/images/logo-compact.png"
+            alt="S | CO"
+            class="logo-compact h-9 md:h-10"
+          />
         </a>
         <div
           class="hidden md:flex items-center gap-8 text-sm font-mono-rustic text-zinc-400 uppercase"
@@ -40,7 +57,7 @@
           <a href="#" class="hover:text-white transition-colors">Process</a>
           <a
             href="#"
-            class="bg-white text-zinc-950 px-5 py-2 rounded-full hover:bg-zinc-200 transition-colors"
+            class="bg-[var(--brand-cream)] text-zinc-950 px-5 py-2 rounded-full hover:bg-white transition-colors"
             style="letter-spacing: 0.12em;"
           >
             Contact
@@ -73,7 +90,7 @@
       <div class="relative z-10 max-w-7xl mx-auto px-6 w-full">
         <div class="flex flex-col gap-6">
           <div
-            class="flex items-center gap-3 text-zinc-300 border border-white/10 w-fit px-4 py-1.5 rounded-full bg-black/40 backdrop-blur-sm"
+            class="flex items-center gap-3 text-[var(--brand-cream)] border border-[var(--brand-brown)]/40 w-fit px-4 py-1.5 rounded-full bg-black/50 backdrop-blur-sm"
           >
             <span class="relative flex h-2 w-2">
               <span
@@ -88,17 +105,14 @@
             </span>
           </div>
 
-          <!-- Main heading -->
+          <!-- Main heading with logo integration -->
           <div class="relative">
-            <h1
-              class="font-heading text-6xl md:text-8xl lg:text-9xl font-normal text-white leading-[0.9]"
-              style="letter-spacing: 0.03em;"
-            >
-              SLENDER
-              <br />
-              <span class="text-zinc-500 italic">&amp;</span>
-              COMPANY
-            </h1>
+            <h1 class="sr-only">Slender &amp; Company</h1>
+            <img
+              src="assets/images/logo-full.png"
+              alt="SLENDER &amp; COMPANY"
+              class="h-16 md:h-20 lg:h-24 w-auto max-w-[320px] object-contain object-left mb-6 opacity-95"
+            />
 
             <!-- Scrolling Ticker -->
             <div class="mt-10 relative overflow-hidden" id="ticker-wrapper">
@@ -644,14 +658,14 @@
         <div
           class="flex flex-col sm:flex-row items-center justify-center gap-4"
         >
-          <button
-            class="font-mono-rustic px-8 py-4 bg-white text-zinc-950 text-sm font-normal rounded-full hover:bg-zinc-200 transition-colors w-full sm:w-auto uppercase"
+            <button
+            class="font-mono-rustic px-8 py-4 bg-[var(--brand-cream)] text-zinc-950 text-sm font-normal rounded-full hover:bg-white transition-colors w-full sm:w-auto uppercase"
             style="letter-spacing: 0.15em;"
           >
             Schedule Consultation
           </button>
           <button
-            class="font-mono-rustic px-8 py-4 border border-zinc-700 text-white text-sm font-normal rounded-full hover:bg-zinc-900 transition-colors w-full sm:w-auto uppercase"
+            class="font-mono-rustic px-8 py-4 border border-[var(--brand-brown)]/60 text-[var(--brand-cream)] text-sm font-normal rounded-full hover:bg-[var(--brand-brown)]/20 hover:border-[var(--brand-brown)] transition-colors w-full sm:w-auto uppercase"
             style="letter-spacing: 0.15em;"
           >
             View Full Portfolio
@@ -661,17 +675,20 @@
     </section>
 
     <!-- Footer -->
-    <footer class="border-t border-zinc-900 bg-zinc-950 pt-20 pb-10">
+    <footer class="border-t border-[rgba(151,117,85,0.15)] bg-[#09090b] pt-20 pb-10">
       <div class="max-w-7xl mx-auto px-6">
         <div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-20">
           <div class="col-span-1 md:col-span-2">
             <a
               href="#"
-              class="font-heading text-2xl text-white flex items-center gap-3 mb-6"
-              style="letter-spacing: 0.12em;"
+              class="inline-block mb-6 transition-opacity hover:opacity-90"
+              aria-label="Slender & Company - Home"
             >
-              <i data-lucide="layers" class="w-6 h-6 text-zinc-400" style="stroke-width:1.5"></i>
-              SLENDER <span class="text-zinc-500 italic">&amp;</span> CO.
+              <img
+                src="assets/images/logo-full.png"
+                alt="SLENDER &amp; COMPANY"
+                class="logo-full h-12 md:h-14"
+              />
             </a>
             <p class="text-lg text-zinc-500 max-w-sm">
               General contracting, project management, and consulting services

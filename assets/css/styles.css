@@ -1,20 +1,33 @@
-/* Base Styles */
-body {
-  font-family: 'Inter', sans-serif;
+/* Brand colors from logo - warm brown & cream for cohesion */
+:root {
+  --brand-brown: #977555;
+  --brand-brown-muted: rgba(151, 117, 85, 0.25);
+  --brand-cream: #DEDDCB;
+  --brand-cream-muted: rgba(222, 221, 203, 0.9);
+}
+
+/* Base Styles - Courier Prime (Parts List style) used EVERYWHERE */
+html,
+body,
+h1, h2, h3, h4, h5, h6,
+p, span, a, button, div, li, ul, ol,
+input, label, td, th,
+* {
+  font-family: 'Courier Prime', 'Cutive Mono', monospace !important;
 }
 
 .font-heading {
-  font-family: 'DM Serif Display', serif;
+  font-family: 'Courier Prime', 'Cutive Mono', monospace !important;
 }
 
 .font-mono-rustic {
-  font-family: 'Courier Prime', 'Cutive Mono', monospace;
+  font-family: 'Courier Prime', 'Cutive Mono', monospace !important;
 }
 
 .glass-panel {
-  background: rgba(24, 24, 27, 0.6);
+  background: rgba(24, 24, 27, 0.7);
   backdrop-filter: blur(12px);
-  border: 1px solid rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(151, 117, 85, 0.15);
 }
 
 .rustic-label {
@@ -50,7 +63,7 @@ body {
 }
 
 .ticker-label {
-  font-family: 'DM Serif Display', serif;
+  font-family: 'Courier Prime', 'Cutive Mono', monospace;
   font-size: clamp(48px, 8vw, 100px);
   font-weight: 400;
   letter-spacing: 0.04em;
@@ -152,9 +165,9 @@ body {
 }
 
 .service-tab.active {
-  background: white;
+  background: var(--brand-cream);
   color: #09090b;
-  border-color: white;
+  border-color: var(--brand-cream);
 }
 
 .service-slide {
@@ -221,4 +234,39 @@ body {
 
 #service-progress {
   transition: width 50ms linear;
+}
+
+/* Logo integration - seamless on dark backgrounds */
+.logo-compact {
+  height: 36px;
+  width: auto;
+  object-fit: contain;
+  object-position: left;
+  transition: opacity 0.3s ease;
+}
+.logo-compact:hover {
+  opacity: 0.9;
+}
+
+.logo-full {
+  height: 48px;
+  width: auto;
+  max-width: 280px;
+  object-fit: contain;
+  object-position: left;
+  transition: opacity 0.3s ease;
+}
+.logo-full:hover {
+  opacity: 0.9;
+}
+
+/* Nav & footer link hover - cream to match logo text */
+nav a:not([class*="bg-"]):hover,
+footer a:hover {
+  color: var(--brand-cream) !important;
+}
+
+/* Footer: solid dark background so logo sits flush */
+footer {
+  background-color: #09090b;
 }
