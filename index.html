@@ -1,0 +1,748 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Slender &amp; Company | General Contractor</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Courier+Prime:wght@400;700&family=Inter:wght@300;400;500;600&family=Cutive+Mono&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+  </head>
+  <body
+    class="bg-zinc-950 text-zinc-200 antialiased selection:bg-zinc-700 selection:text-white"
+  >
+    <!-- Navigation -->
+    <nav
+      class="fixed top-0 left-0 w-full z-50 border-b border-white/5 bg-zinc-950/80 backdrop-blur-md"
+    >
+      <div
+        class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between"
+      >
+        <a
+          href="#"
+          class="font-heading text-2xl tracking-wide text-white flex items-center gap-3"
+        >
+          <i data-lucide="layers" class="w-6 h-6 text-zinc-400" style="stroke-width:1.5"></i>
+          <span class="tracking-widest" style="letter-spacing: 0.15em;">SLENDER <span class="text-zinc-500">&amp;</span> CO.</span>
+        </a>
+        <div
+          class="hidden md:flex items-center gap-8 text-sm font-mono-rustic text-zinc-400 uppercase"
+          style="letter-spacing: 0.12em;"
+        >
+          <a href="#" class="hover:text-white transition-colors">Services</a>
+          <a href="#" class="hover:text-white transition-colors">Portfolio</a>
+          <a href="#" class="hover:text-white transition-colors">Process</a>
+          <a
+            href="#"
+            class="bg-white text-zinc-950 px-5 py-2 rounded-full hover:bg-zinc-200 transition-colors"
+            style="letter-spacing: 0.12em;"
+          >
+            Contact
+          </a>
+        </div>
+        <!-- Mobile Menu Icon -->
+        <button class="md:hidden text-white">
+          <i data-lucide="menu" class="w-6 h-6" style="stroke-width:1.5"></i>
+        </button>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header
+      class="relative w-full min-h-screen flex flex-col justify-end pb-20 pt-32 overflow-hidden"
+    >
+      <!-- Background Image with Overlay -->
+      <div class="absolute inset-0 z-0" id="hero-bg-container">
+        <img
+          id="hero-bg-img"
+          src="https://images.unsplash.com/photo-1600607686527-6fb886090705?q=80&w=2700&auto=format&fit=crop"
+          alt="Modern Architecture"
+          class="w-full h-full object-cover opacity-60 transition-opacity duration-700"
+        />
+        <div
+          class="absolute inset-0 bg-gradient-to-b from-zinc-950/30 via-zinc-950/60 to-zinc-950"
+        ></div>
+      </div>
+
+      <div class="relative z-10 max-w-7xl mx-auto px-6 w-full">
+        <div class="flex flex-col gap-6">
+          <div
+            class="flex items-center gap-3 text-zinc-300 border border-white/10 w-fit px-4 py-1.5 rounded-full bg-black/40 backdrop-blur-sm"
+          >
+            <span class="relative flex h-2 w-2">
+              <span
+                class="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75"
+              ></span>
+              <span
+                class="relative inline-flex rounded-full h-2 w-2 bg-green-500"
+              ></span>
+            </span>
+            <span class="font-mono-rustic text-xs font-normal" style="letter-spacing: 0.25em;">
+              ACCEPTING NEW PROJECTS
+            </span>
+          </div>
+
+          <!-- Main heading -->
+          <div class="relative">
+            <h1
+              class="font-heading text-6xl md:text-8xl lg:text-9xl font-normal text-white leading-[0.9]"
+              style="letter-spacing: 0.03em;"
+            >
+              SLENDER
+              <br />
+              <span class="text-zinc-500 italic">&amp;</span>
+              COMPANY
+            </h1>
+
+            <!-- Scrolling Ticker -->
+            <div class="mt-10 relative overflow-hidden" id="ticker-wrapper">
+              <div
+                class="flex items-center gap-0"
+                id="ticker-track"
+                style="width: max-content;"
+              ></div>
+            </div>
+          </div>
+
+          <div
+            class="flex flex-col md:flex-row md:items-end justify-between gap-10 mt-8 border-t border-white/10 pt-8"
+          >
+            <p
+              class="text-lg md:text-xl text-zinc-300 max-w-xl leading-relaxed"
+              id="hero-description"
+            >
+              We define the new standard of modern construction management. From
+              permitting to superintendent services, we build with precision,
+              clarity, and unwavering professionalism.
+            </p>
+            <div class="flex flex-col gap-1 text-right">
+              <span class="font-mono-rustic text-xs text-zinc-500" style="letter-spacing: 0.25em;">
+                LOCATION
+              </span>
+              <span class="font-heading text-xl text-white" style="letter-spacing: 0.04em;">
+                New York / Chicago / LA
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Services Grid -->
+    <section class="py-24 bg-zinc-950 relative" id="services-section">
+      <div class="max-w-7xl mx-auto px-6">
+        <div
+          class="flex flex-col md:flex-row justify-between items-end mb-16 gap-6"
+        >
+          <h2
+            class="font-heading text-4xl md:text-5xl font-normal text-white"
+            style="letter-spacing: 0.06em;"
+          >
+            OUR SERVICES
+          </h2>
+          <p class="font-mono-rustic text-zinc-400 text-sm max-w-md text-right" style="letter-spacing: 0.08em;">
+            Comprehensive oversight for complex architectural visions.
+          </p>
+        </div>
+
+        <!-- Services Slider -->
+        <div class="relative">
+          <!-- Navigation Tabs -->
+          <div class="flex flex-wrap gap-3 mb-10" id="service-tabs">
+            <button
+              class="service-tab active px-6 py-3 rounded-full text-xs font-normal transition-all duration-400"
+              data-index="0"
+            >
+              Project Management
+            </button>
+            <button
+              class="service-tab px-6 py-3 rounded-full text-xs font-normal transition-all duration-400"
+              data-index="1"
+            >
+              Superintendent
+            </button>
+            <button
+              class="service-tab px-6 py-3 rounded-full text-xs font-normal transition-all duration-400"
+              data-index="2"
+            >
+              Permitting Services
+            </button>
+            <button
+              class="service-tab px-6 py-3 rounded-full text-xs font-normal transition-all duration-400"
+              data-index="3"
+            >
+              Consulting
+            </button>
+          </div>
+
+          <!-- Slider Content -->
+          <div
+            class="relative rounded-3xl overflow-hidden border border-zinc-800 bg-zinc-900"
+            style="min-height: 560px;"
+            id="service-slider"
+          >
+            <!-- Slide 1 -->
+            <div class="service-slide active" data-index="0">
+              <div
+                class="grid grid-cols-1 lg:grid-cols-2 h-full"
+                style="min-height: 560px;"
+              >
+                <div
+                  class="p-10 md:p-16 flex flex-col justify-center relative z-10"
+                >
+                  <span
+                    class="font-mono-rustic text-8xl text-zinc-700/40 mb-4 leading-none"
+                  >
+                    01
+                  </span>
+                  <h3
+                    class="font-heading text-3xl md:text-4xl font-normal text-white mb-6"
+                    style="letter-spacing: 0.04em;"
+                  >
+                    Project Management
+                  </h3>
+                  <p
+                    class="text-lg text-zinc-400 leading-relaxed mb-8 max-w-md"
+                  >
+                    End-to-end oversight ensuring timelines are met and budgets
+                    are respected. We coordinate every moving piece so your
+                    vision becomes reality — on time, every time.
+                  </p>
+                  <div class="flex flex-wrap gap-3 mb-8">
+                    <span
+                      class="font-mono-rustic px-4 py-1.5 rounded-full border border-zinc-700 text-xs text-zinc-300"
+                      style="letter-spacing: 0.1em;"
+                    >
+                      Timeline Control
+                    </span>
+                    <span
+                      class="font-mono-rustic px-4 py-1.5 rounded-full border border-zinc-700 text-xs text-zinc-300"
+                      style="letter-spacing: 0.1em;"
+                    >
+                      Budget Tracking
+                    </span>
+                    <span
+                      class="font-mono-rustic px-4 py-1.5 rounded-full border border-zinc-700 text-xs text-zinc-300"
+                      style="letter-spacing: 0.1em;"
+                    >
+                      Stakeholder Reports
+                    </span>
+                  </div>
+                  <a
+                    href="#"
+                    class="font-mono-rustic inline-flex items-center gap-2 text-white border-b border-white pb-1 hover:text-zinc-300 hover:border-zinc-300 transition-colors w-fit text-sm uppercase"
+                    style="letter-spacing: 0.12em;"
+                  >
+                    Learn More
+                    <i data-lucide="arrow-right" class="w-4 h-4" style="stroke-width:1.5"></i>
+                  </a>
+                </div>
+                <div class="relative overflow-hidden">
+                  <img
+                    src="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?auto=format&fit=crop&q=80&w=1200"
+                    class="absolute inset-0 w-full h-full object-cover"
+                    alt="Project Management"
+                  />
+                  <div
+                    class="absolute inset-0 bg-gradient-to-r from-zinc-900 via-zinc-900/40 to-transparent"
+                  ></div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Slide 2 -->
+            <div class="service-slide" data-index="1">
+              <div
+                class="grid grid-cols-1 lg:grid-cols-2 h-full"
+                style="min-height: 560px;"
+              >
+                <div
+                  class="p-10 md:p-16 flex flex-col justify-center relative z-10"
+                >
+                  <span
+                    class="font-mono-rustic text-8xl text-zinc-700/40 mb-4 leading-none"
+                  >
+                    02
+                  </span>
+                  <h3
+                    class="font-heading text-3xl md:text-4xl font-normal text-white mb-6"
+                    style="letter-spacing: 0.04em;"
+                  >
+                    Superintendent
+                  </h3>
+                  <p
+                    class="text-lg text-zinc-400 leading-relaxed mb-8 max-w-md"
+                  >
+                    On-site leadership to coordinate trades, safety, and quality
+                    control daily. Our superintendents are the backbone of every
+                    successful build.
+                  </p>
+                  <div class="flex flex-wrap gap-3 mb-8">
+                    <span
+                      class="font-mono-rustic px-4 py-1.5 rounded-full border border-zinc-700 text-xs text-zinc-300"
+                      style="letter-spacing: 0.1em;"
+                    >
+                      Safety Oversight
+                    </span>
+                    <span
+                      class="font-mono-rustic px-4 py-1.5 rounded-full border border-zinc-700 text-xs text-zinc-300"
+                      style="letter-spacing: 0.1em;"
+                    >
+                      Trade Coordination
+                    </span>
+                    <span
+                      class="font-mono-rustic px-4 py-1.5 rounded-full border border-zinc-700 text-xs text-zinc-300"
+                      style="letter-spacing: 0.1em;"
+                    >
+                      Quality Assurance
+                    </span>
+                  </div>
+                  <a
+                    href="#"
+                    class="font-mono-rustic inline-flex items-center gap-2 text-white border-b border-white pb-1 hover:text-zinc-300 hover:border-zinc-300 transition-colors w-fit text-sm uppercase"
+                    style="letter-spacing: 0.12em;"
+                  >
+                    Learn More
+                    <i data-lucide="arrow-right" class="w-4 h-4" style="stroke-width:1.5"></i>
+                  </a>
+                </div>
+                <div class="relative overflow-hidden">
+                  <img
+                    src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&q=80&w=1200"
+                    class="absolute inset-0 w-full h-full object-cover"
+                    alt="Superintendent"
+                  />
+                  <div
+                    class="absolute inset-0 bg-gradient-to-r from-zinc-900 via-zinc-900/40 to-transparent"
+                  ></div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Slide 3 -->
+            <div class="service-slide" data-index="2">
+              <div
+                class="grid grid-cols-1 lg:grid-cols-2 h-full"
+                style="min-height: 560px;"
+              >
+                <div
+                  class="p-10 md:p-16 flex flex-col justify-center relative z-10"
+                >
+                  <span
+                    class="font-mono-rustic text-8xl text-zinc-700/40 mb-4 leading-none"
+                  >
+                    03
+                  </span>
+                  <h3
+                    class="font-heading text-3xl md:text-4xl font-normal text-white mb-6"
+                    style="letter-spacing: 0.04em;"
+                  >
+                    Permitting Services
+                  </h3>
+                  <p
+                    class="text-lg text-zinc-400 leading-relaxed mb-8 max-w-md"
+                  >
+                    Navigating complex municipal codes to expedite approval
+                    processes. We handle the red tape so you can focus on what
+                    matters — building.
+                  </p>
+                  <div class="flex flex-wrap gap-3 mb-8">
+                    <span
+                      class="font-mono-rustic px-4 py-1.5 rounded-full border border-zinc-700 text-xs text-zinc-300"
+                      style="letter-spacing: 0.1em;"
+                    >
+                      Code Compliance
+                    </span>
+                    <span
+                      class="font-mono-rustic px-4 py-1.5 rounded-full border border-zinc-700 text-xs text-zinc-300"
+                      style="letter-spacing: 0.1em;"
+                    >
+                      Expedited Filing
+                    </span>
+                    <span
+                      class="font-mono-rustic px-4 py-1.5 rounded-full border border-zinc-700 text-xs text-zinc-300"
+                      style="letter-spacing: 0.1em;"
+                    >
+                      Municipal Liaison
+                    </span>
+                  </div>
+                  <a
+                    href="#"
+                    class="font-mono-rustic inline-flex items-center gap-2 text-white border-b border-white pb-1 hover:text-zinc-300 hover:border-zinc-300 transition-colors w-fit text-sm uppercase"
+                    style="letter-spacing: 0.12em;"
+                  >
+                    Learn More
+                    <i data-lucide="arrow-right" class="w-4 h-4" style="stroke-width:1.5"></i>
+                  </a>
+                </div>
+                <div class="relative overflow-hidden">
+                  <img
+                    src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&q=80&w=1200"
+                    class="absolute inset-0 w-full h-full object-cover"
+                    alt="Permitting"
+                  />
+                  <div
+                    class="absolute inset-0 bg-gradient-to-r from-zinc-900 via-zinc-900/40 to-transparent"
+                  ></div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Slide 4 -->
+            <div class="service-slide" data-index="3">
+              <div
+                class="grid grid-cols-1 lg:grid-cols-2 h-full"
+                style="min-height: 560px;"
+              >
+                <div
+                  class="p-10 md:p-16 flex flex-col justify-center relative z-10"
+                >
+                  <span
+                    class="font-mono-rustic text-8xl text-zinc-700/40 mb-4 leading-none"
+                  >
+                    04
+                  </span>
+                  <h3
+                    class="font-heading text-3xl md:text-4xl font-normal text-white mb-6"
+                    style="letter-spacing: 0.04em;"
+                  >
+                    Consulting
+                  </h3>
+                  <p
+                    class="text-lg text-zinc-400 leading-relaxed mb-8 max-w-md"
+                  >
+                    Strategic advice for developers and owners on feasibility
+                    and logistics. Decades of experience distilled into
+                    actionable insights for your project.
+                  </p>
+                  <div class="flex flex-wrap gap-3 mb-8">
+                    <span
+                      class="font-mono-rustic px-4 py-1.5 rounded-full border border-zinc-700 text-xs text-zinc-300"
+                      style="letter-spacing: 0.1em;"
+                    >
+                      Feasibility Studies
+                    </span>
+                    <span
+                      class="font-mono-rustic px-4 py-1.5 rounded-full border border-zinc-700 text-xs text-zinc-300"
+                      style="letter-spacing: 0.1em;"
+                    >
+                      Risk Assessment
+                    </span>
+                    <span
+                      class="font-mono-rustic px-4 py-1.5 rounded-full border border-zinc-700 text-xs text-zinc-300"
+                      style="letter-spacing: 0.1em;"
+                    >
+                      Strategic Planning
+                    </span>
+                  </div>
+                  <a
+                    href="#"
+                    class="font-mono-rustic inline-flex items-center gap-2 text-white border-b border-white pb-1 hover:text-zinc-300 hover:border-zinc-300 transition-colors w-fit text-sm uppercase"
+                    style="letter-spacing: 0.12em;"
+                  >
+                    Learn More
+                    <i data-lucide="arrow-right" class="w-4 h-4" style="stroke-width:1.5"></i>
+                  </a>
+                </div>
+                <div class="relative overflow-hidden">
+                  <img
+                    src="https://images.unsplash.com/photo-1664575602276-acd073f104c1?auto=format&fit=crop&q=80&w=1200"
+                    class="absolute inset-0 w-full h-full object-cover"
+                    alt="Consulting"
+                  />
+                  <div
+                    class="absolute inset-0 bg-gradient-to-r from-zinc-900 via-zinc-900/40 to-transparent"
+                  ></div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Progress Bar -->
+            <div class="absolute bottom-0 left-0 right-0 h-1 bg-zinc-800 z-20">
+              <div
+                class="h-full bg-white transition-all duration-300 ease-linear"
+                id="service-progress"
+                style="width: 0%;"
+              ></div>
+            </div>
+          </div>
+
+          <!-- Slide Navigation Arrows -->
+          <div class="flex items-center justify-between mt-6">
+            <div class="flex items-center gap-3">
+              <span class="font-mono-rustic text-sm text-zinc-500" id="slide-counter" style="letter-spacing: 0.15em;">
+                01 / 04
+              </span>
+            </div>
+            <div class="flex items-center gap-3">
+              <button
+                id="prev-slide"
+                class="w-12 h-12 rounded-full border border-zinc-700 flex items-center justify-center text-white hover:bg-zinc-800 transition-colors"
+              >
+                <i data-lucide="arrow-left" class="w-5 h-5" style="stroke-width:1.5"></i>
+              </button>
+              <button
+                id="next-slide"
+                class="w-12 h-12 rounded-full border border-zinc-700 flex items-center justify-center text-white hover:bg-zinc-800 transition-colors"
+              >
+                <i data-lucide="arrow-right" class="w-5 h-5" style="stroke-width:1.5"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Specs / Technical Section -->
+    <section class="py-24 bg-zinc-950">
+      <div class="max-w-7xl mx-auto px-6">
+        <div
+          class="bg-zinc-900 border border-zinc-800 rounded-3xl overflow-hidden grid grid-cols-1 lg:grid-cols-2"
+        >
+          <!-- Data Table -->
+          <div class="p-10 md:p-16 flex flex-col justify-center">
+            <h2
+              class="font-heading text-3xl md:text-4xl font-normal text-white mb-2"
+              style="letter-spacing: 0.06em;"
+            >
+              OPERATIONAL STANDARDS
+            </h2>
+            <p class="text-zinc-400 text-lg mb-10">
+              We operate with a metrics-driven approach to general contracting.
+            </p>
+
+            <div class="flex flex-col gap-0 w-full">
+              <!-- Row -->
+              <div
+                class="flex items-center justify-between py-5 border-b border-zinc-800"
+              >
+                <span class="font-mono-rustic text-sm text-zinc-300 uppercase" style="letter-spacing: 0.08em;">
+                  Safety Compliance Rate
+                </span>
+                <span class="font-heading text-xl text-white">99.8%</span>
+              </div>
+              <!-- Row -->
+              <div
+                class="flex items-center justify-between py-5 border-b border-zinc-800"
+              >
+                <span class="font-mono-rustic text-sm text-zinc-300 uppercase" style="letter-spacing: 0.08em;">
+                  Permit Acquisition Time
+                </span>
+                <span class="font-heading text-xl text-white">-30% Avg</span>
+              </div>
+              <!-- Row -->
+              <div
+                class="flex items-center justify-between py-5 border-b border-zinc-800"
+              >
+                <span class="font-mono-rustic text-sm text-zinc-300 uppercase" style="letter-spacing: 0.08em;">
+                  Budget Adherence
+                </span>
+                <span class="font-heading text-xl text-white">Strict Fixed</span>
+              </div>
+              <!-- Row -->
+              <div
+                class="flex items-center justify-between py-5 border-b border-zinc-800"
+              >
+                <span class="font-mono-rustic text-sm text-zinc-300 uppercase" style="letter-spacing: 0.08em;">
+                  Subcontractor Network
+                </span>
+                <span class="font-heading text-xl text-white">Tier 1 Only</span>
+              </div>
+              <!-- Row -->
+              <div
+                class="flex items-center justify-between py-5 border-b border-zinc-800"
+              >
+                <span class="font-mono-rustic text-sm text-zinc-300 uppercase" style="letter-spacing: 0.08em;">
+                  Reporting Frequency
+                </span>
+                <span class="font-heading text-xl text-white">Daily Logs</span>
+              </div>
+              <!-- Row -->
+              <div
+                class="flex items-center justify-between py-5 border-b border-zinc-800"
+              >
+                <span class="font-mono-rustic text-sm text-zinc-300 uppercase" style="letter-spacing: 0.08em;">
+                  Site Inspections
+                </span>
+                <span class="font-heading text-xl text-white">Weekly</span>
+              </div>
+            </div>
+
+            <div class="mt-10">
+              <a
+                href="#"
+                class="font-mono-rustic inline-flex items-center gap-2 text-white border-b border-white pb-1 hover:text-zinc-300 hover:border-zinc-300 transition-colors text-sm uppercase"
+                style="letter-spacing: 0.12em;"
+              >
+                Download Capabilities Deck
+                <i data-lucide="arrow-up-right" class="w-4 h-4" style="stroke-width:1.5"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Visual -->
+          <div class="relative min-h-[500px] lg:h-full bg-zinc-800">
+            <img
+              src="https://images.unsplash.com/photo-1613490493576-7fde63acd811?q=80&w=2671&auto=format&fit=crop"
+              class="absolute inset-0 w-full h-full object-cover opacity-90 mix-blend-overlay"
+              alt="Technical Drawing"
+            />
+            <div
+              class="absolute inset-0 bg-gradient-to-t from-zinc-900 to-transparent opacity-80"
+            ></div>
+
+            <div class="absolute bottom-10 left-10 md:left-16 right-10">
+              <div class="glass-panel p-6 rounded-2xl max-w-sm">
+                <div class="flex items-center gap-4 mb-3">
+                  <div class="p-2 bg-white/10 rounded-lg">
+                    <i data-lucide="ruler" class="w-6 h-6 text-white" style="stroke-width:1.5"></i>
+                  </div>
+                  <div>
+                    <p class="font-mono-rustic text-xs text-zinc-400 uppercase" style="letter-spacing: 0.2em;">
+                      Current Project
+                    </p>
+                    <p class="font-heading text-white text-lg" style="letter-spacing: 0.03em;">
+                      The Glasshaven Residence
+                    </p>
+                  </div>
+                </div>
+                <div
+                  class="w-full bg-zinc-700 h-1 rounded-full overflow-hidden"
+                >
+                  <div class="bg-white w-[75%] h-full rounded-full"></div>
+                </div>
+                <div class="flex justify-between mt-2 text-xs text-zinc-400 font-mono-rustic" style="letter-spacing: 0.08em;">
+                  <span>Phase 3: Interiors</span>
+                  <span>75% Complete</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Large CTA Section -->
+    <section class="py-24 bg-zinc-950 border-t border-zinc-900">
+      <div class="max-w-7xl mx-auto px-6 text-center">
+        <h2
+          class="font-heading text-5xl md:text-7xl font-normal text-white mb-8"
+          style="letter-spacing: 0.03em;"
+        >
+          Ready to build<span class="italic">?</span>
+        </h2>
+        <p class="text-xl md:text-2xl text-zinc-400 max-w-2xl mx-auto mb-12">
+          Partner with Slender &amp; Company for a construction process that is
+          as refined as the final product.
+        </p>
+        <div
+          class="flex flex-col sm:flex-row items-center justify-center gap-4"
+        >
+          <button
+            class="font-mono-rustic px-8 py-4 bg-white text-zinc-950 text-sm font-normal rounded-full hover:bg-zinc-200 transition-colors w-full sm:w-auto uppercase"
+            style="letter-spacing: 0.15em;"
+          >
+            Schedule Consultation
+          </button>
+          <button
+            class="font-mono-rustic px-8 py-4 border border-zinc-700 text-white text-sm font-normal rounded-full hover:bg-zinc-900 transition-colors w-full sm:w-auto uppercase"
+            style="letter-spacing: 0.15em;"
+          >
+            View Full Portfolio
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="border-t border-zinc-900 bg-zinc-950 pt-20 pb-10">
+      <div class="max-w-7xl mx-auto px-6">
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-20">
+          <div class="col-span-1 md:col-span-2">
+            <a
+              href="#"
+              class="font-heading text-2xl text-white flex items-center gap-3 mb-6"
+              style="letter-spacing: 0.12em;"
+            >
+              <i data-lucide="layers" class="w-6 h-6 text-zinc-400" style="stroke-width:1.5"></i>
+              SLENDER <span class="text-zinc-500 italic">&amp;</span> CO.
+            </a>
+            <p class="text-lg text-zinc-500 max-w-sm">
+              General contracting, project management, and consulting services
+              defined by precision and integrity.
+            </p>
+          </div>
+          <div>
+            <h4 class="font-mono-rustic text-white font-normal mb-6 text-xs uppercase" style="letter-spacing: 0.25em;">Sitemap</h4>
+            <ul class="flex flex-col gap-4 text-zinc-500">
+              <li>
+                <a href="#" class="hover:text-white transition-colors">Home</a>
+              </li>
+              <li>
+                <a href="#" class="hover:text-white transition-colors">
+                  Services
+                </a>
+              </li>
+              <li>
+                <a href="#" class="hover:text-white transition-colors">
+                  Projects
+                </a>
+              </li>
+              <li>
+                <a href="#" class="hover:text-white transition-colors">
+                  About Us
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h4 class="font-mono-rustic text-white font-normal mb-6 text-xs uppercase" style="letter-spacing: 0.25em;">Connect</h4>
+            <ul class="flex flex-col gap-4 text-zinc-500">
+              <li>
+                <a href="#" class="hover:text-white transition-colors">
+                  LinkedIn
+                </a>
+              </li>
+              <li>
+                <a href="#" class="hover:text-white transition-colors">
+                  Instagram
+                </a>
+              </li>
+              <li>
+                <a href="#" class="hover:text-white transition-colors">
+                  Twitter
+                </a>
+              </li>
+              <li>
+                <a href="#" class="hover:text-white transition-colors">
+                  Email Us
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div
+          class="flex flex-col md:flex-row justify-between items-center pt-8 border-t border-zinc-900 text-zinc-600 text-sm"
+        >
+          <p class="font-mono-rustic text-xs" style="letter-spacing: 0.08em;">© 2024 Slender &amp; Company. All rights reserved.</p>
+          <div class="flex gap-6 mt-4 md:mt-0 font-mono-rustic text-xs" style="letter-spacing: 0.08em;">
+            <a href="#" class="hover:text-zinc-400">Privacy Policy</a>
+            <a href="#" class="hover:text-zinc-400">Terms of Service</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="assets/js/ticker.js"></script>
+    <script src="assets/js/services.js"></script>
+    <script>
+      lucide.createIcons();
+    </script>
+  </body>
+</html>
